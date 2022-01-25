@@ -1,0 +1,12 @@
+[class*="container"]{width: 100px;background:lightblue;padding:50px 140px 50px 80px;
+    border-width:4px;border-style: inset;border-color:red ;margin-left: 1000px;margin-top: 150px;}
+
+.h1{color: red;text-align: center;font-size: 4em;}
+body{
+    background: url("../img/police2.jpg") no-repeat 0 0/100%;
+}
+/*按下按钮*/
+[class*="btn"]{
+    position: relative;
+    top:2px;
+}

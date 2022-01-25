@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="login.css">
+</head> 
+<body> 
+    <form action="http://mersey.cs.nott.ac.uk/~alysg10/coursework2/officer/login.php" method="post" onsubmit="return enter()">
+    <h1 class="h1">Police System</h1>
+    <div class="container" >
+      
+        <div class="login"> 
+            <span class="right selected">
+                Login
+            </span>  
+            
+            <form class="form">
+                <div class="hidden">
+                    <div class="form-item">
+                        <input type="text"  placeholder="account number" name="username" id="username">
+                    </div>
+                    <div class="form-item">
+                        <input type="password"  placeholder="Password" name="password" id="password">
+                    </div>
+                    <div class="form-item">
+                        <!-- <button class="btn">sign in</button> -->
+                        <input type="submit" value="submit">
+                       
+                    </div>                
+                </div>
+        </div>
+    </div>
+    </form> 
+    
+    <script type="text/javascript"> 
+        function enter() 
+        { 
+        var username=document.getElementById("username").value;//获取form中的用户名 
+        var password=document.getElementById("password").value; 
+        var regex=/^[/s]+$/;//声明一个判断用户名前后是否有空格的正则表达式 
+        if(regex.test(username)||username.length==0)//判定用户名的是否前后有空格或者用户名是否为空 
+            { 
+            alert("用户名格式不对"); 
+            return false; 
+            } 
+        if(regex.test(password)||password.length==0)//同上述内容 
+        { 
+            alert("密码格式不对"); 
+            return false; 
+        } 
+        return true; 
+        } 
+  </script> 
+</body> 
+</html>

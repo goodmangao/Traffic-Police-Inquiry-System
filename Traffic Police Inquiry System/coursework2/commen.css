@@ -1,0 +1,7 @@
+[class*="link"]{position: relative;top:2px; margin-right: 35px;text-decoration:none;}  
+[class*="container"]{  width:500px;
+    margin:50px auto;
+    }  
+[class*="logout"]{float:right ; margin-right: 35px;text-decoration:none;} 
+[class*="cp"]{float:right ; margin-right: 35px;text-decoration:none;} 
+[class*="add"]{white-space:nowrap;} 
